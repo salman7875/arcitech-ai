@@ -43,7 +43,9 @@ Ensure you have the following installed on your system:
     ```npm install
 
 3. **Start the App**
-    ```npm start
+    ```bash
+    npm start
 
 4. **Start the Json-server**
-    ```npm run server
+    ```bash
+    npm run server
