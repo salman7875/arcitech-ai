@@ -1,0 +1,42 @@
+@import "../../index.scss";
+
+.middle-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1rem 4rem;
+
+  @include small-mobile {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .area-container {
+    height: 30rem;
+    position: relative;
+    grid-column: 1 / -1;
+    @include graph-card;
+
+    &.loading {
+      @include skeleton-loading;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      right: 2%;
+      transform: translateY(-50%);
+      @include filter-btn;
+
+      @include mobile {
+        top: 0;
+      }
+
+      &:hover {
+        background-color: #736cd1;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.pie-container {
+  height: 30rem;
+  @include graph-card;
+
+  &.loading {
+    @include skeleton-loading;
+  }
+}

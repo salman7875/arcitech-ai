@@ -1,6 +1,8 @@
+@import "../../index.scss";
+
 .active-link {
   border-radius: 1rem 2rem;
-  background-color: #650ddfe0;
+  background-color: #5f59ce;
 
   a {
     color: #fff;
@@ -15,19 +17,40 @@
   padding: 2rem 1rem;
   overflow-y: hidden;
 
+  @include mobile {
+    display: none;
+  }
+
   .nav-header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
+    background-color: #ada9ff;
+    border-radius: 1rem;
+
+    @include tablet {
+      padding: 0.5rem;
+    }
 
     .nav-logo {
+      background-color: #c3c0fd;
       height: 4rem;
       width: 4rem;
       border-radius: 1rem;
+
+      @include tablet {
+        height: 2rem;
+        width: 2rem;
+      }
     }
 
     .nav-heading {
       font-size: 1.8rem;
+
+      @include tablet {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -49,6 +72,10 @@
         font-size: 1.4rem;
         text-decoration: none;
 
+        @include tablet {
+          font-size: 1.2rem;
+        }
+
         img {
           border-radius: 0.6rem;
         }
@@ -56,7 +83,7 @@
 
       &:hover {
         border-radius: 1rem 2rem;
-        background-color: #650ddfe0;
+        background-color: #5f59ce;
         a {
           color: #fff;
         }

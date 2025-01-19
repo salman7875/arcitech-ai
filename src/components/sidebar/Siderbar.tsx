@@ -1,12 +1,17 @@
-import { FC } from "react";
+import { FC, useState } from "react";
+
+import { SIDEBAR_DATA } from "../../constant";
+import SidebarList from "./SidebarList";
 import "./sidebar.scss";
 
 const Siderbar: FC = () => {
+  const [activeLink, setActiveLink] = useState(1);
+
   return (
     <nav className="nav">
       <div className="nav-header">
         <img
-          src="https://avatars.githubusercontent.com/u/78205495?v=4"
+          src="https://arcitech.ai/wp-content/uploads/2023/08/cropped-arcitech-logo-1.webp"
           alt="Company Logo"
           className="nav-logo"
         />
@@ -14,94 +19,13 @@ const Siderbar: FC = () => {
       </div>
 
       <ul className="links">
-        <li className="link active-link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Dashboard
-          </a>
-        </li>
-        <li className="link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Leaderboard
-          </a>
-        </li>
-        <li className="link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Order
-          </a>
-        </li>
-        <li className="link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Products
-          </a>
-        </li>
-        <li className="link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Sales Report
-          </a>
-        </li>
-        <li className="link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Messages
-          </a>
-        </li>
-        <li className="link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Settings
-          </a>
-        </li>
-        <li className="link">
-          <a href="#">
-            <img
-              src="https://avatars.githubusercontent.com/u/78205495?v=4"
-              alt=""
-              height={20}
-              width={20}
-            />
-            Sign out
-          </a>
-        </li>
+        {SIDEBAR_DATA.map((data) => (
+          <SidebarList
+            data={data}
+            activeLink={activeLink}
+            handleLinkState={(id: number) => setActiveLink(id)}
+          />
+        ))}
       </ul>
     </nav>
   );

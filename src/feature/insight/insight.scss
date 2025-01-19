@@ -1,0 +1,90 @@
+@import "../../index.scss";
+
+.insight {
+  flex: 2;
+  margin-top: 5rem;
+
+  .insight-header {
+    margin-bottom: 2rem;
+    h3 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .insight-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    height: 12rem;
+
+    &.loading {
+      @include skeleton-loading;
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .insight-card {
+      padding: 1rem;
+      height: 10rem;
+      background-color: #ada9ff;
+      border: 1px solid #5f59ce;
+      box-shadow: #c2befe 0px 2px 8px 0px;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 0.7rem;
+      overflow: hidden;
+
+      &.loading {
+        @include skeleton-loading;
+      }
+
+      @include small-mobile {
+        padding: 0.5rem;
+      }
+
+      img {
+        border-radius: 1rem;
+        height: 5rem;
+        width: 5rem;
+
+        @include mobile {
+          height: 4rem;
+          width: 4rem;
+        }
+      }
+
+      .right {
+        align-self: center;
+        .title {
+          font-size: 2.4rem;
+          font-weight: 700;
+
+          @include mobile {
+            font-size: 1.4rem;
+          }
+          @include small-mobile {
+            font-size: 1.8rem;
+          }
+        }
+        .subtitle {
+          font-size: 1.2rem;
+          font-weight: 500;
+
+          @include mobile {
+            font-size: 1rem;
+          }
+          @include small-mobile {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../index.scss";
+
+.bar-container {
+  height: 30rem;
+  width: 100%;
+  @include graph-card;
+
+  &.loading {
+    @include skeleton-loading;
+  }
+}

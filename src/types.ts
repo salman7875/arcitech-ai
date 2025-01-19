@@ -1,0 +1,54 @@
+export const ACTIONS: ActionType = {
+  INSIGHT: {
+    FETCH_START: "FETCH_INSIGHT_START",
+    FETCH_SUCCESS: "FETCH_INSIGHT_SUCCESS",
+    FETCH_FAIL: "FETCH_INSIGHT_FAIL",
+  },
+  CATEGORIES: {
+    FETCH_START: "FETCH_CATEGORIES_START",
+    FETCH_SUCCESS: "FETCH_CATEGORIES_SUCCESS",
+    FETCH_FAIL: "FETCH_CATEGORIES_FAIL",
+  },
+  USER_SATISFACTION: {
+    FETCH_START: "FETCH_USER_SATISFACTION_START",
+    FETCH_SUCCESS: "FETCH_USER_SATISFACTION_SUCCESS",
+    FETCH_FAIL: "FETCH_USER_SATISFACTION_FAIL",
+  },
+  RESPONSE_TIME: {
+    FETCH_START: "FETCH_RESPONSE_TIME_START",
+    FETCH_SUCCESS: "FETCH_RESPONSE_TIME_SUCCESS",
+    FETCH_FAIL: "FETCH_RESPONSE_TIME_FAIL",
+    TOGGLE: "TOGGLE_RESP",
+  },
+  DISTRIBUTION: {
+    FETCH_START: "FETCH_DISTRIBUTION_START",
+    FETCH_SUCCESS: "FETCH_DISTRIBUTION_SUCCESS",
+    FETCH_FAIL: "FETCH_DISTRIBUTION_FAIL",
+    TOGGLE: "TOGGLE_DIST",
+  },
+};
+
+export type ActionTypeKeys = keyof typeof ACTIONS;
+
+interface ActionType {
+  [Key: string]: {
+    FETCH_START: string;
+    FETCH_SUCCESS: string;
+    FETCH_FAIL: string;
+    TOGGLE?: string;
+  };
+}
+
+export type ENDPOINT =
+  | "insight_summary"
+  | "category_distribution"
+  | "response_times"
+  | "user_satisfaction"
+  | "usage_statistics";
+
+export type KEY_ACTION =
+  | "INSIGHT"
+  | "CATEGORIES"
+  | "RESPONSE_TIME"
+  | "DISTRIBUTION"
+  | "USER_SATISFACTION";

@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.line-container {
+  height: 40rem;
+  position: relative;
+  grid-column: 1 / -1;
+  @include graph-card;
+
+  &.loading {
+    @include skeleton-loading;
+  }
+  
+  @include mobile {
+    height: 30rem;
+    margin-right: 0;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    @include filter-btn;
+
+    &:hover {
+      background-color: #736cd1;
+    }
+  }
+}

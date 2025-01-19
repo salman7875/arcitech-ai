@@ -1,20 +1,96 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 2rem;
-  background-color: #d9e6fa;
+@import "../../index.scss";
 
-  .title {
-    font-size: 2.4rem;
+.header {
+  position: fixed;
+  width: calc(100% - 16%);
+  z-index: 99;
+
+  @include mobile {
+    width: 100%;
   }
 
-  .header-wrapper {
-    .input-container {
-      input {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #cdcbff;
+
+    @include tablet {
+      padding: 1rem 2rem;
+    }
+
+    @include mobile {
+      padding: 1rem 2rem;
+    }
+
+    @include small-mobile {
+      padding: 1rem 2rem;
+    }
+
+    .title {
+      font-size: 2.4rem;
+
+      @include tablet {
+        font-size: 2.2rem;
+      }
+      @include mobile {
+        font-size: 2rem;
+      }
+
+      @include small-mobile {
+        font-size: 1.6em;
+      }
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .input-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
         padding: 0.5rem;
+        background-color: #fff;
         border-radius: 0.7rem;
-        outline: none;
+        overflow: hidden;
+
+        @include mobile {
+          display: none;
+        }
+        @include small-mobile {
+          display: none;
+        }
+
+        input {
+          padding: 0.5rem 0;
+          outline: none;
+          border: none;
+
+          @include small-mobile {
+            padding: 0;
+          }
+        }
+      }
+
+      button {
+        background-color: #7370d0;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        padding: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        @include small-mobile {
+          padding: .5rem;
+        }
+
+        &:hover {
+          background-color: #8e8be9;
+        }
       }
     }
   }
