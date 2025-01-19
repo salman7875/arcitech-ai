@@ -8,9 +8,7 @@ export const fetcher = (endpoint: ENDPOINT, key: KEY_ACTION) => {
     try {
       const res = await fetch(`http://localhost:4000/${endpoint}`);
       const data = await res.json();
-      setTimeout(() => {
-        dispatch({ type: ACTIONS[key].FETCH_SUCCESS, payload: data });
-      }, 2000);
+      dispatch({ type: ACTIONS[key].FETCH_SUCCESS, payload: data });
     } catch (err: any) {
       dispatch({ type: ACTIONS[key].FETCH_FAIL, payload: err.message });
     }

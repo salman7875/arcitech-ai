@@ -6,7 +6,7 @@ import { RootState } from "../../service/redux/reducer";
 import { fetcher } from "../../service/api/request";
 import { UserSatisfactionType } from "../../service/redux/userSatisfactionReducer";
 
-const RatingChart: FC<any> = () => {
+const RatingChart: FC = () => {
   const dispatch: any = useDispatch();
   const { data, isLoading, error } = useSelector(
     (state: RootState) => state.userSatisfaction

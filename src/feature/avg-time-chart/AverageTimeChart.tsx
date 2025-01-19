@@ -7,7 +7,7 @@ import { RootState } from "../../service/redux/reducer";
 import "./average-time-chart.scss";
 import { ResponseTimeType } from "../../service/redux/responseTimeReducer";
 
-const AverageTimeChart: FC<any> = () => {
+const AverageTimeChart: FC = () => {
   const dispatch: any = useDispatch();
   const { data, isLoading, error, isActive } = useSelector(
     (state: RootState) => state.responseTime

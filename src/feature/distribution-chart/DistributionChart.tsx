@@ -7,7 +7,7 @@ import { fetcher } from "../../service/api/request";
 import "./distribution-chart.scss";
 import { DistributionType } from "../../service/redux/distributionReducer";
 
-const DistributionChart: FC<any> = () => {
+const DistributionChart: FC = () => {
   const dispatch: any = useDispatch();
   const { data, isLoading, error, isActive } = useSelector(
     (state: RootState) => state.distribution
