@@ -27,6 +27,7 @@ This project is a React-based dashboard application built with:
   - **service/**           _API service and Redux store_
     - **api/**             _API request configurations_
     - **redux/**           _Redux store and slices_
+    - **util/**           _helper functions
   - **styles/**            _Sass stylesheets_
   - **App.tsx**            _Main app component_
   - **index.tsx**          _App entry point_
