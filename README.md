@@ -1,3 +1,8 @@
+# **Youtube Link: **
+https://github.com/salman7875/arcitech-ai
+
+---
+
 # **React Dashboard Application**
 
 This project is a React-based dashboard application built with:
@@ -22,15 +27,15 @@ This project is a React-based dashboard application built with:
 ## Folder Structure
 
 - **src/**
-  - **components/**        _Reusable UI components_
-  - **features/**          _Feature-specific modules_
-  - **service/**           _API service and Redux store_
-    - **api/**             _API request configurations_
-    - **redux/**           _Redux store and slices_
-    - **util/**           _helper functions
-  - **styles/**            _Sass stylesheets_
-  - **App.tsx**            _Main app component_
-  - **index.tsx**          _App entry point_
+  - **components/** _Reusable UI components_
+  - **features/** _Feature-specific modules_
+  - **service/** _API service and Redux store_
+    - **api/** _API request configurations_
+    - **redux/** _Redux store and slices_
+    - **util/** \_helper functions
+  - **styles/** _Sass stylesheets_
+  - **App.tsx** _Main app component_
+  - **index.tsx** _App entry point_
 
 ---
 
@@ -50,17 +55,27 @@ Ensure you have the following installed on your system:
 ## **Installation**
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/your-username/arcitech-ai.git
    cd arcitech-ai
 
+   ```
+
 2. **Install the dependency**
-    ```npm install
+
+   ```npm install
+
+   ```
 
 3. **Start the App**
-    ```bash
-    npm start
+
+   ```bash
+   npm start
+
+   ```
 
 4. **Start the Json-server**
-    ```bash
-    npm run server
+   ```bash
+   npm run server
+   ```
