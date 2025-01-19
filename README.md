@@ -1,5 +1,5 @@
 # **Youtube Link: **
-https://github.com/salman7875/arcitech-ai
+https://www.youtube.com/watch?v=JyXE6yZlFFY
 
 ---
 
