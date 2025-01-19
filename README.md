@@ -20,15 +20,16 @@ This project is a React-based dashboard application built with:
 ---
 
 ## Folder Structure
-src/
-├── components/        # Reusable UI components
-├── features/          # Feature specific modules
-├── service/           # API service and Redux store
-│   ├── api/           # API request configurations
-│   ├── redux/         # Redux store and slices
-├── styles/            # Sass stylesheets
-├── App.tsx            # Main app component
-├── index.tsx          # App entry point
+
+- **src/**
+  - **components/**        _Reusable UI components_
+  - **features/**          _Feature-specific modules_
+  - **service/**           _API service and Redux store_
+    - **api/**             _API request configurations_
+    - **redux/**           _Redux store and slices_
+  - **styles/**            _Sass stylesheets_
+  - **App.tsx**            _Main app component_
+  - **index.tsx**          _App entry point_
 
 ---
 
