@@ -19,6 +19,19 @@ This project is a React-based dashboard application built with:
 
 ---
 
+## Folder Structure
+src/
+├── components/        # Reusable UI components
+├── features/          # Feature specific modules
+├── service/           # API service and Redux store
+│   ├── api/           # API request configurations
+│   ├── redux/         # Redux store and slices
+├── styles/            # Sass stylesheets
+├── App.tsx            # Main app component
+├── index.tsx          # App entry point
+
+---
+
 ## **Getting Started**
 
 Follow these steps to set up and run the project on your local machine.
