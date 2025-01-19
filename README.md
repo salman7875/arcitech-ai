@@ -40,10 +40,10 @@ Ensure you have the following installed on your system:
    cd arcitech-ai
 
 2. **Install the dependency**
-    npm install
+    ```npm install
 
 3. **Start the App**
-    npm start
+    ```npm start
 
 4. **Start the Json-server**
-    npm run server
+    ```npm run server
